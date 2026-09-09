@@ -1,19 +1,49 @@
-# React + Vite
+# Ember Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A mobile-first pizza ordering experience built with React, Vite, Tailwind CSS, Framer Motion, and React Icons. Ember Pizza uses a warm late-night pizzeria visual system with deep espresso surfaces, tomato red CTAs, basil accents, and creamy cards.
 
-Currently, two official plugins are available:
+## Included flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Animated splash screen and branded loading state
+- Mobile header with delivery location and animated cart badge
+- Promotional hero banner with floating ingredient motion
+- Scrollable category filters
+- Animated pizza menu cards with ratings, dietary indicators, and add-to-cart actions
+- Product customization sheet with size, crust, toppings, quantity, and live pricing
+- Deals and offers section
+- Interactive cart with quantity controls, removal, coupon application, delivery fee, discount, and total calculation
+- Frontend-only checkout with address, contact, delivery notes, and payment method UI
+- Animated order-success confirmation state
+- Responsive layouts tuned for 320px–430px mobile widths and larger screens
 
-## React Compiler
+## Local setup
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+npm install
+npm run dev
+```
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+Open the local Vite URL shown in the terminal.
 
-## Expanding the Oxlint configuration
+## Production build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm run build
+npm run preview
+```
+
+## Quality checks
+
+```bash
+npm run lint
+```
+
+The application is frontend-only. Checkout and payment controls are intentionally UI demonstrations and do not submit real payments.
+
+## Deployment
+
+The app is Vite-compatible and can be deployed to Vercel or Netlify with the following settings:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Install command: `npm install`
